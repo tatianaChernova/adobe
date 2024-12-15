@@ -1,0 +1,93 @@
+html {
+  scroll-behavior: smooth;
+  background-color: var(--page-bg);
+}
+
+body {
+  background-color: var(--page-bg);
+  color: var(--text-color);
+  font-family: var(--font-main);
+  font-size: 22px;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+img {
+  display: block;
+}
+
+a {
+  color: var(--link-color);
+}
+
+code {
+  background-color: #e9f1f6;
+  padding: 0.2rem;
+  border-radius: 4px;
+}
+
+pre.code {
+  overflow-x: auto;
+  background-color: #e9f1f6;
+  padding: 1rem;
+  border-radius: 4px;
+}
+.section {
+  margin-bottom: 80px;
+}
+.link {
+  font-size: 16px;
+  line-height: 1;
+  font-family: "gothampro_medium", sans-serif;
+  font-weight: 500;
+  transition: all 0.32s linear;
+}
+.link:hover {
+  color: var(--accent-red);
+}
+.btn-group {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 47px;
+}
+.btn {
+  padding: 16px 24px;
+  border-radius: 40px;
+  background-color: rgba(158, 11, 55, 70.2%);
+  box-shadow: inset 4px 4px 6px rgb(255 255 255 / 0.5), 4px 4px 20px rgb(223 80 23 / 0.8);
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 500;
+  font-family: "gothampro_medium", sans-serif;
+  cursor: pointer;
+  transition: all 0.32s linear;
+}
+.btn:hover {
+  filter: brightness(130%);
+}
+@media (max-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+  .section {
+    margin-bottom: 50px;
+  }
+  .btn-group {
+    gap: 20px;
+  }
+  .btn,
+  .link {
+    font-size: 14px;
+  }
+}
+@media (max-width: 500px) {
+  body {
+    font-size: 16px;
+  }
+}
+@media (max-width: 395px) {
+  body {
+    font-size: 14px;
+  }
+}
